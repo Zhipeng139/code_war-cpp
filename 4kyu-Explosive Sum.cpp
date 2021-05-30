@@ -1,5 +1,6 @@
 using ull = unsigned long long;
-/* first version: p(10,10) = 1+p(10,9) = 1+p(10,8)+p(1,9) = 1+p(10,7)+p(2,8)+p(1,9) = 1+p(10,7)+p(2,2)+p(1,1) = 1+p(10,7)+ [ 1+p(2,1) ] +p(1,1) = 1+p(10,7)+ [ 1+p(2,0)+p(1,1) ] +p(1,1) = ...
+//Obsevasion: p(10,10) = 1+p(10,9) = 1+p(10,8)+p(1,9) = 1+p(10,7)+p(2,8)+p(1,9) = 1+p(10,7)+p(2,2)+p(1,1) = 1+p(10,7)+ [ 1+p(2,1) ] +p(1,1) = 1+p(10,7)+ [ 1+p(2,0)+p(1,1) ] +p(1,1) = ...
+/* first version:
   we can notice that some cases is already computed
   ull recursive(unsigned int a, unsigned int b){
   if(a==1||b==1) return 1;
